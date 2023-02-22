@@ -19,7 +19,7 @@ const infoArray = [
     {
         src: "https://i.ibb.co/804brYd/portafolio.png",
         description: "Construido con React, implementando dependencias para ciertas finalidades (swiper, react-awesome-reveal, etc.), desplegado en AWS Amplify.",
-        link: "#"
+        link: "https://github.com/Alejandro-TrejoG/portafolio"
     }
 ]
 
