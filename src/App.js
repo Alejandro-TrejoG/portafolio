@@ -1,23 +1,23 @@
+import React from 'react';
 import './App.css';
 
+import { NavBar } from './components/NavBar';
+import { AboutMe } from './components/AboutMe';
+import { MyProjects } from './components/MyProjects';
+import { Technologies } from './components/Technologies';
+import { Contact } from './components/Contact';
+
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <AboutMe />
+      <MyProjects />
+      <Technologies />
+      <Contact />
     </div>
   );
 }
 
-export default App;
+export { App };

@@ -1,0 +1,102 @@
+.aboutMe-content{
+    width: 80%;
+    min-height: 150px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.aboutMe-content::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8rem;
+    right: -30%;
+    /* z-index: -1; */
+    width: 100%;
+    min-height: 200px;
+    max-height: max-content;
+    background-image: url("https://i.ibb.co/TTSbpwB/redes.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.aboutMe-content__name{
+    font-size: 24px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.aboutMe-content__grade{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 119, 194);
+    margin: 1rem 0;
+}
+
+.aboutMe-content__description{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+@media (min-width:425px) {
+    .aboutMe-content{
+        width: 70%;
+    }
+
+    .aboutMe-content::after{
+        width: 400px;
+        bottom: -5rem;
+        right: -8rem;
+    }
+
+    .aboutMe-content__header{
+        font-size: 32px;
+    }
+
+    .aboutMe-content__grade{
+        font-size: 18px;
+    }
+
+    .aboutMe-content__description{
+        margin: 2rem 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .aboutMe-content{
+        width: 768px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .aboutMe-content::after{
+        width: 500px;
+        min-height: 300px;
+        max-height: max-content;
+        bottom: -10rem;
+    }
+
+    .aboutMe-content__header{
+        flex-basis: 40%;
+    }
+
+    .aboutMe-content__name{
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .aboutMe-content__grade{
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .aboutMe-content__description{
+        flex-basis: 50%;
+    }
+}

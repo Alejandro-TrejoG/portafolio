@@ -1,0 +1,51 @@
+.projects-content{
+    width: 100%;
+    min-height: 150px;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    background-color: rgb(64, 64, 90);
+    box-shadow: 0px -5px 5px rgb(64, 64, 90),
+    0px -2px 5px rgb(64, 64, 90), 
+    0px -1px 5px rgb(64, 64, 90),
+    0px 2px 5px rgb(64, 64, 90);
+    color: rgb(228, 228, 228);
+}
+
+.projects-content__header{
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.projects-content__cards{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.projects-content__github{
+    cursor: default;
+    margin: 1rem 2rem;
+}
+
+.projects-content__github a{
+    color: rgb(105, 212, 176);
+    text-decoration: none;
+}
+
+.projects-content__github a:hover{
+    text-decoration: underline;
+    transition: all 1s ease-in-out;
+}
+
+.projects-content__github a:visited{
+    color: rgb(105, 212, 176);
+}
+
+@media (min-width:1024px){
+    .projects-content__cards{
+        width: 768px;
+    }
+    .projects-content__github{
+        margin: 3rem 5rem;
+    }
+}
