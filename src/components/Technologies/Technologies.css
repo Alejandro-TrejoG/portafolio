@@ -5,6 +5,13 @@
     margin: 3rem auto;
     padding: 2rem 0;
     border-bottom: 1px solid gray;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-darkmode{
+  color: rgb(235, 235, 235) !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .swiper-container__header{

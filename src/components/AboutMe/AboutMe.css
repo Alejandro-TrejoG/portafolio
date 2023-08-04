@@ -6,6 +6,42 @@
     position: relative;
     display: flex;
     flex-flow: column wrap;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.aboutMe-darkmode{
+    color: rgb(235, 235, 235) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.aboutMe-content__darkmodeBtn{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.aboutMe-content__darkmodeBtn:hover{
+    background-color: rgb(192, 192, 192);
+    box-shadow: 0px 0px 10px rgb(192, 192, 192), 0px 0px 5px rgb(192, 192, 192);
+}
+
+.darkmodeBtn-dark{
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(36, 36, 52) !important;
+}
+
+.darkmodeBtn-dark:hover{
+    background-color: rgb(49, 49, 70) !important;
+    box-shadow: 0px 0px 10px rgb(49, 49, 70), 0px 0px 5px rgb(49, 49, 70) !important;
 }
 
 .aboutMe-content::after{
@@ -53,6 +89,10 @@
         right: -8rem;
     }
 
+    .aboutMe-content__darkmodeBtn{
+        left: 15px;
+    }
+
     .aboutMe-content__header{
         font-size: 32px;
     }
@@ -63,6 +103,14 @@
 
     .aboutMe-content__description{
         margin: 2rem 0;
+    }
+}
+
+@media (min-width:728px) {
+    .aboutMe-content__darkmodeBtn{
+        width: 40px;
+        height: 40px;
+        left: 20px;
     }
 }
 
@@ -80,6 +128,11 @@
         min-height: 300px;
         max-height: max-content;
         bottom: -10rem;
+    }
+
+    .aboutMe-content__darkmodeBtn{
+        top: 30px;
+        left: 5%;
     }
 
     .aboutMe-content__header{
